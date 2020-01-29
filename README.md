@@ -3,7 +3,7 @@ Volumetric Lighting library for JMonkey Game Engine
 
 
 ### Usage:
-
+```
 //1. FPP to add the filter
 FilterPostProcessor filterPostProcessor = new FilterPostProcessor(assetManager);
 //2. Basic settings
@@ -24,7 +24,7 @@ vsf.setInensity(3);
 //5. Add
 filterPostProcessor.addFilter(vsf);
 viewPort.addProcessor(filterPostProcessor);
-
+```
 ### Screenshots
 
 ![VolumetricLighting1](../master/img/VolumetricLighting1.jpg)
