@@ -1,17 +1,13 @@
-package org.volumelighting.test;
+package test.org.volumelighting.test;
 
 import com.jme3.app.SimpleApplication;
 
 import com.jme3.light.AmbientLight;
 import com.jme3.light.DirectionalLight;
-import com.jme3.light.PointLight;
 import com.jme3.light.SpotLight;
 import com.jme3.material.Material;
-
 import com.jme3.math.ColorRGBA;
-
 import com.jme3.math.Vector3f;
-
 import com.jme3.post.FilterPostProcessor;
 import com.jme3.post.filters.BloomFilter;
 import com.jme3.renderer.RenderManager;
@@ -22,9 +18,6 @@ import com.jme3.scene.Spatial;
 import com.jme3.shadow.DirectionalLightShadowFilter;
 import com.jme3.shadow.EdgeFilteringMode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 import org.volumelighting.vl.VolumeLightFilter;
 

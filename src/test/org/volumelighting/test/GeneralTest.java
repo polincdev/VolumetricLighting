@@ -1,44 +1,34 @@
-package org.volumelighting.test;
+package test.org.volumelighting.test;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.cinematic.MotionPath;
-import com.jme3.cinematic.MotionPathListener;
+
 import com.jme3.cinematic.events.MotionEvent;
-import com.jme3.light.DirectionalLight;
+
 import com.jme3.light.PointLight;
 import com.jme3.light.SpotLight;
 import com.jme3.material.Material;
-import com.jme3.material.RenderState;
+
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
-import com.jme3.math.Matrix3f;
+
 import com.jme3.math.Vector3f;
-import com.jme3.post.Filter;
+
 import com.jme3.post.FilterPostProcessor;
-import com.jme3.renderer.Camera;
+
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.shape.Box;
-import com.jme3.scene.shape.Quad;
 import com.jme3.scene.shape.Sphere;
-import com.jme3.shadow.EdgeFilteringMode;
-import com.jme3.shadow.PointLightShadowFilter;
-import com.jme3.shadow.SpotLightShadowFilter;
-import com.jme3.shadow.SpotLightShadowRenderer;
-import com.jme3.ui.Picture;
-import com.jme3.util.TangentBinormalGenerator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import jme3tools.optimize.GeometryBatchFactory;
+
 import org.volumelighting.vl.VolumeLightFilter;
 
-/**
- * @author TheToucher
- */
 public class GeneralTest extends SimpleApplication {
 
     private Random random = new Random(4l);
@@ -57,20 +47,15 @@ public class GeneralTest extends SimpleApplication {
         for (int ii=0; ii<100; ii++) {
             addRandomObject();
         }
-        
-       
-        
+         
        rootNode.attachChild(randObjects);
-       //GeometryBatchFactory.optimize(randObjects, false);
-       
+        
        filterPostProcessor = new FilterPostProcessor(assetManager);
        addSpotlightDrone(new ColorRGBA(1.0f, 0.96f, 0.7f, 1.0f).mult(.8f), 20f * FastMath.DEG_TO_RAD);
        addSpotlightDrone(ColorRGBA.Cyan, 8f * FastMath.DEG_TO_RAD);
        addSpotlightDrone(new ColorRGBA(1.0f, 0.96f, 0.7f, 1.0f).mult(6f), 4f * FastMath.DEG_TO_RAD);
        viewPort.addProcessor(filterPostProcessor);
-       
-       
-       
+        
     }
     
     static final private float DRONE_RANGE = 80f;
