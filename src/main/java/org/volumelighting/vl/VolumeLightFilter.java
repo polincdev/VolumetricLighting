@@ -1,4 +1,4 @@
-package org.volumelighting.vl;
+package main.java.org.volumelighting.vl;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.export.InputCapsule;

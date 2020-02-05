@@ -1,4 +1,4 @@
-package test.org.volumelighting.test;
+package main.java.org.volumelighting.test;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.cinematic.MotionPath;
@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import org.volumelighting.vl.VolumeLightFilter;
+import main.java.org.volumelighting.vl.VolumeLightFilter;
 
 public class GeneralTest extends SimpleApplication {
 

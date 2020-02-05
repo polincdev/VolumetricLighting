@@ -1,4 +1,4 @@
-package test.org.volumelighting.test;
+package main.java.org.volumelighting.test;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.light.AmbientLight;
@@ -13,7 +13,7 @@ import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import com.jme3.shadow.DirectionalLightShadowFilter;
 import com.jme3.shadow.EdgeFilteringMode;
-import org.volumelighting.vl.VolumeLightFilter;
+import main.java.org.volumelighting.vl.VolumeLightFilter;
 
 public class SunTest extends SimpleApplication {
  
