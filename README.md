@@ -9,7 +9,7 @@ FilterPostProcessor filterPostProcessor = new FilterPostProcessor(assetManager);
 //2. Basic settings
 ColorRGBA color=new ColorRGBA(0.8f , 0.6f , 0f,1.0f ).mult(0.5f);
 Vector3f pos= new Vector3f(1.4053185f, 5.5330953f, -1.5833765f); 
-//3. Spotlight which is contains basic config data and provides real lighting
+//3. Spotlight which contains basic config data and provides real lighting
 SpotLight spot = new SpotLight();
 spot.setSpotRange(6);
 spot.setSpotInnerAngle(0.1f); //distance from pos - origin
